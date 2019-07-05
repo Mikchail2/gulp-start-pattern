@@ -1,0 +1,10 @@
+@import 'mixin';
+.button{
+    padding: 10px 20px;
+    background-color: $button;  
+    color: $black;
+    border: none;
+    font: inherit;
+    cursor: pointer;
+    text-transform: uppercase ;
+}

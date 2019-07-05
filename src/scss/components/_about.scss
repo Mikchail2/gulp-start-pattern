@@ -1,29 +1,44 @@
 @import 'mixin';
-.about-us{
-    &_title{
-        @include font-text;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 55px;
-        line-height: 75px;
-    }
+
+.about-us {
+  @include backgroundImage("./img/bg_about.jpg", linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)));
+
+  &_title {
+    @include font-text;
+    color: $white;
+    @include title_h2;
+    margin: 0;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    text-transform: uppercase;
+  }
 }
-.about-block{
+
+.about-block {
+  display: flex;
+  padding-bottom: 50px;
+
+  &_avatar {
+
+  }
+
+  &_text {
+    color: $white;
+    @include just_fucktext;
+    //margin-bottom: 57px;
+  }
+
+  &_button {
+
+  }
+
+  &_text-button {
     display: flex;
-    &_avatar{
+    justify-content: space-between;
+    //align-content: inherit;
+    align-items: self-start;
+    flex-direction: column;
+    margin-left: 20px;
 
-    }
-    &_text{
-        font-weight: 300;
-        font-size: 20px;
-        line-height: 27px;
-        @include font-text;
-    }
-    &_button{
-
-    }
-    &_text-button{
-        margin-left: 20px;
-        
-    }
+  }
 }
