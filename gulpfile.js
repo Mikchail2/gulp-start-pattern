@@ -84,3 +84,4 @@ gulp.task('watch', watch);
 gulp.task('build', gulp.series(clean, gulp.parallel(scss, js, html, fonts, img)))
 //Запуск dev проекта
 gulp.task('dev', gulp.series('build', 'watch'));
+https://evamilos1.github.io
