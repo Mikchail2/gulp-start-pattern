@@ -73,6 +73,7 @@ function watch() {
 }
 
 gulp.task('scss', scss);
+gulp.task('clean', clean);
 gulp.task('js', js);
 gulp.task('html', html);
 gulp.task('fonts', fonts);
