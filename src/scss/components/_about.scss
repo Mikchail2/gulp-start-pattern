@@ -4,19 +4,14 @@
   @include backgroundImage("./img/bg_about.jpg", linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)));
 
   &_title {
-    @include font-text;
     color: $white;
-    @include title_h2;
-    margin: 0;
-    padding-top: 50px;
-    padding-bottom: 40px;
+    margin-bottom: 40px;
     text-transform: uppercase;
   }
 }
 
 .about-block {
   display: flex;
-  padding-bottom: 50px;
 
   &_avatar {
 
@@ -25,7 +20,6 @@
   &_text {
     color: $white;
     @include just_fucktext;
-    //margin-bottom: 57px;
   }
 
   &_button {
@@ -41,4 +35,5 @@
     margin-left: 20px;
 
   }
+
 }

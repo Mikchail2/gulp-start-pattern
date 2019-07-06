@@ -27,6 +27,14 @@
   line-height: 75px;
 }
 
+@mixin title_h3() {
+  @include font_text;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 27px;
+}
+
 @mixin just_fucktext() {
   @include font_text;
   font-style: normal;
