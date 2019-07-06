@@ -1,6 +1,7 @@
 @import 'mixin';
+
 body {
-  font-family: Oswald, sans-serif !important;//а это какого?
+  font-family: Oswald, sans-serif !important; //а это какого?
 }
 
 .container {
@@ -9,27 +10,34 @@ body {
   padding: 0 20px;
 }
 
-.block{
+.block {
   padding: 50px 0;
 }
 
 
-.just_text{
+.just_text {
   @include just_fucktext;
 }
 
-.title_h2{
+.title_h2 {
   @include title_h2;
 }
 
-.title_h3{
+.title_h3 {
   @include title_h3;
 }
 
-h1,h2,h3,p{
+h1, h2, h3, p {
   margin: 0;
   padding: 0;
 }
-a{
+
+ul, li, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
   text-decoration: none;
 }
